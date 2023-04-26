@@ -3,9 +3,28 @@ const path = require("path");
 const AdmZip = require("adm-zip");
 
 const modifyArchive = () => {
-  const inputArchivePath = "./output/archive.zip";
-  const outputArchivePath = "./output/archive-copy.zip";
+  const inputFolderPath = "./output";
   const tempFolderPath = "./output/archive";
+  let inputZipFileName = "";
+
+  // Получаем имя zip файла
+  const files = fs.readdirSync(inputFolderPath);
+  files.forEach((file) => {
+    if (path.extname(file) === ".zip") {
+      inputZipFileName = file;
+    }
+  });
+
+  if (!inputZipFileName) {
+    console.error("Zip-файл не найден");
+    return;
+  }
+
+  const inputArchivePath = path.join(inputFolderPath, inputZipFileName);
+  const outputArchivePath = path.join(
+    inputFolderPath,
+    `modified_${inputZipFileName}`
+  );
 
   // Создаем временную папку
   if (!fs.existsSync(tempFolderPath)) {
