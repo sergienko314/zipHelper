@@ -1,0 +1,16 @@
+Caret Down / 16, 24 / Filled & Regular
+Caret Up / 16, 24 / Filled & Regular
+Check Mark / 16, 24, 32 / Regular
+Checkbox Empty / 16, 24, 32 / Regular
+Checkbox Indeterminate / 16, 24, 32 / Filled & Regular
+Checkbox Selected / 16, 24, 32 / Filled & Regular
+Chevron Down / 16, 24, 32 / Regular
+Chevron Left / 16, 24, 32 / Regular
+Chevron Right / 16, 24, 32 / Regular
+Chevron Up / 16, 24, 32 / Regular
+Cross / 16, 24, 32 / Regular
+Link External / 16, 24, 32 / Regular
+Placeholder / 16, 24, 32 / Filled & Regular
+Radio Check / 16, 24, 32 / Filled & Regular
+Radio Empty / 16, 24, 32 / Regular
+Radio Selected / 16, 24, 32 / Filled & Regular
